@@ -86,6 +86,7 @@ fragment companyDetails on Company{
 }
 ```
 
+- Mutations are used to edit our data
 - Executing a Mutation
 
 ```js
@@ -97,4 +98,6 @@ mutation {
   }
 }
 ```
+
+
 
