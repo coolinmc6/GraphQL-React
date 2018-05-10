@@ -99,5 +99,10 @@ mutation {
 }
 ```
 
+## Lyrical
+
+- `npm run dev`
+- update server.js file with username and password: `const MONGO_URI = 'mongodb:<>//<>:@ds119650.mlab.com:19650/lyricaldb-cm';`
+
 
 
