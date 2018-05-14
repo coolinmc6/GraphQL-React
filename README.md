@@ -16,7 +16,7 @@ In a browser: `http://localhost:4000/graphql`
 
 - Basics:
 
-```js
+```javascript
 
 // Unnamed Query
 {
@@ -29,6 +29,7 @@ In a browser: `http://localhost:4000/graphql`
     }
   }
 }
+
 
 // Named Query
 query findCompany {
@@ -97,12 +98,15 @@ mutation {
     age
   }
 }
+
 ```
 
 ## Lyrical
 
 - `npm run dev`
-- update server.js file with username and password: `const MONGO_URI = 'mongodb:<>//<>:@ds119650.mlab.com:19650/lyricaldb-cm';`
+- update server.js file with username and password: 
+
+`const MONGO_URI = 'mongodb://<username>:<password>@ds119650.mlab.com:19650/lyricaldb-cm';`
 
 
 
