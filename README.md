@@ -68,7 +68,7 @@ export default gql`
 
 **BEFORE:**
 
-```babel
+```js
 import React, { Component } from 'react';
 
 class Header extends Component  {
@@ -86,7 +86,9 @@ class Header extends Component  {
 export default Header;
 ```
 
-```babel
+**AFTER:**
+
+```js
 import React, { Component } from 'react';
 
 import { graphql } from 'react-apollo';
@@ -106,6 +108,25 @@ class Header extends Component  {
 
 export default graphql(query)(Header);
 ```
+
+### Add Mutation to React Component
+
+- If there already is a query present on the component, we can wrap the export again in a graphql parens:
+
+```js
+export default graphql(mutation)(
+  (query)(Header)
+);
+```
+
+
+
+
+
+
+
+
+
 
 
 
